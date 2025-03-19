@@ -1,0 +1,48 @@
+.homepage-track {
+  margin-top: 80px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.title-track {
+  font-size: 45px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 60px;
+}
+  
+.homepage-track img {
+  transform: rotate(-2deg);
+  border-radius: 10%;
+}
+
+.vertical-timeline::before {
+  background-color: #27272A;
+}
+
+.vertical-timeline {
+  padding: 0;
+}
+
+.vertical-timeline-element-content {
+  background-color: #27272A;
+  color: white;
+}
+
+.vertical-timeline-element-date {
+  color: #27272A;
+  
+}
+
+.company {
+  color: #5185df;
+}
+
+.tecs-track {
+  background-color: #5185DF;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 3px 7px;
+  }

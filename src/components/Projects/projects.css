@@ -1,0 +1,28 @@
+.homepage-projects {
+    padding-top: 40px;
+}
+
+.all-projects-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-left: -35px;
+    margin-right: -35px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.project-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 300px;
+}
+
+.project-container:hover {
+    background-color: #60606009;
+}
