@@ -43,12 +43,13 @@
     transition: 150ms ease-in-out;
 }
 
-.project-description {
+.project-description, .project-stacks {
     color: #27272aba;
     transition: 150ms ease-in-out;
 }
 
-.project-container:hover .project-title, .project-container:hover .project-description{
+.project-container:hover .project-title, .project-container:hover .project-description,
+.project-container:hover .project-stacks {
     color: rgb(15, 15, 15);
 }
 

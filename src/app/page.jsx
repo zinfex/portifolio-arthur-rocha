@@ -8,6 +8,7 @@ import Projects from "@/components/Projects/Projects";
 import Track from "@/components/Track/Track";
 import { PiReadCvLogo } from "react-icons/pi";
 import { useState, useEffect } from "react";
+import Header from "@/components/Header/Header";
 
 export default function Home() {
 
@@ -57,6 +58,8 @@ export default function Home() {
 
   return (
     <div className="page-content">
+      <Header />
+
       <div className="content-wrapper">
         <div className="homepage-logo-container">
           <div style={logoStyle}>
