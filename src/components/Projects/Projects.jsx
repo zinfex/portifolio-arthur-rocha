@@ -9,9 +9,6 @@ import { SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa";
 import { RiNextjsFill, RiNodejsFill, RiTailwindCssFill } from "react-icons/ri";
-import { FaNodeJs } from "react-icons/fa";
-
-
 export default function Projects() {
   const [projects, setProjects] = useState([
     {
@@ -20,7 +17,7 @@ export default function Projects() {
       stacks: [
         <FaReact size={20} />, <IoLogoJavascript size={20} />
       ],
-      link: 'https://github.com/zinfex/portifolio'
+      link: 'https://github.com/zinfex/simple-forms'
     },
     {
       title: 'TempSync',
@@ -28,7 +25,7 @@ export default function Projects() {
         <FaReact size={20} />, <IoLogoJavascript size={20} />, <RiNodejsFill size={20} />
       ],
       description: 'Software de monitoramento de temperatura e umidade',
-      link: 'https://github.com/zinfex/portifolio'
+      link: 'https://github.com/zinfex/TempSync'
     },
     {
       title: 'BYD Site',
@@ -36,21 +33,21 @@ export default function Projects() {
         <RiNextjsFill size={20} />, <SiTypescript size={20} />, <RiTailwindCssFill size={20} />
       ],
       description: 'Criei uma nova versão do site da marca de carros BYD',
-      link: 'https://github.com/zinfex/portifolio'
+      link: 'https://github.com/zinfex/BYD-NewSite'
     },
   ]);
 
   return (
-    <div className="homepage-projects">
+    <div className="homepage-projects" id="projetos">
         <div className="all-projects-container">
             {projects.map((project, index) => {
             return (
-                <div key={index} className="project-container">
+                <div key={index} className="project-container" onClick={() => window.open(project.link, "_blank")}>
                     <h2 className="project-title">{project.title}</h2>
                     <p className="project-description">{project.description}</p>
                     
                     <div style={{display: 'flex', alignItems: 'end', justifyContent: 'space-between'}}>
-                      <a className="project-link" href={project.link} target="_blank" rel="noopener noreferrer" style={{display: 'flex', alignItems: 'center', gap: 5}}>
+                      <a className="project-link" target="_blank" rel="noopener noreferrer" style={{display: 'flex', alignItems: 'center', gap: 5}}>
                         <IoIosLink /> Ver Projeto
                       </a>
                       <div className="project-stacks">

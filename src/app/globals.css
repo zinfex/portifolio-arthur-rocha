@@ -22,6 +22,27 @@
   --fa-font-brands: normal 400 1em / 1 "Font Awesome 6 Brands";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #383636;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgb(0, 0, 0);
+}
+
 @font-face {
   font-family: 'SF';
   src: url('../../public/sf-pro-display/SFPRODISPLAYREGULAR.OTF') format('otf');
@@ -65,20 +86,6 @@ a {
   position: relative;
 }
 
-@media (max-width: 1270px) {
-  .content-wrapper {
-      max-width: 90%;
-      padding-left: 10%;
-      padding-right: 10%;
-  }
-}
-
-@media (max-width: 1270px) {
-  .page-content:after, .page-content:before {
-      width: 5%;
-  }
-}
-
 .page-content:after {
   right: 0;
   z-index: 1;
@@ -110,6 +117,19 @@ a {
   padding-top: 130px;
 }
 
+.homepage-image {
+  width: 400px; /* ou outro valor inicial */
+  height: auto; /* ajusta a altura proporcionalmente */
+}
+
+/* Quando a tela for até 450px de largura, mude para % */
+@media (max-width: 450px) {
+  .homepage-image {
+    width: 90%;  /* ou 100%, conforme desejar */
+    height: auto;
+  }
+}
+
 .homepage-first-area-left-side {
   display: flex;
   flex-direction: column;
@@ -121,7 +141,7 @@ a {
   font-size: 40px;
   font-weight: 800;
   width: 80%;
-  font-size: 3.5vw;
+
 }
 
 .subtitle {
@@ -195,7 +215,6 @@ img.logo {
 
 .homepage-socials a{
   color: #1717179c;
-
   font-size: 25px;
   margin-right: 20px;
   transition: color 0.2s ease-in-out;

@@ -15,10 +15,25 @@ export default function Home() {
   const [stayLogo, setStayLogo] = useState(false);
 	const [logoSize, setLogoSize] = useState(80);
 	const [oldLogoSize, setOldLogoSize] = useState(80);
+  const [windowWidth, setWindowWidth] = useState(0);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+
+    // Chamar na montagem
+    handleResize();
+
+    // Adicionar event listener
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -44,11 +59,23 @@ export default function Home() {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, [logoSize, oldLogoSize]);
 
+  // const topValue = stayLogo
+  //   ? windowWidth < 800
+  //   ? "0vh"
+  //   : "3vh"
+  //   : "auto";
+
+  const topValue = stayLogo
+  ? windowWidth < 800
+  ? "10vh"
+  : "3vh"
+  : "auto";
 
 	const logoStyle = {
 		display: "flex",
 		position: stayLogo ? "fixed" : "relative",
-		top: stayLogo ? "3vh" : "auto",
+		// top: stayLogo ? "80px" : "auto",
+    top: topValue,
 		zIndex: 999,
 		border: stayLogo ? "1px solid white" : "none",
 		borderRadius: stayLogo ? "50%" : "none",
@@ -57,7 +84,7 @@ export default function Home() {
 
 
   return (
-    <div className="page-content">
+    <div className="page-content" id="inicio">
       <Header />
 
       <div className="content-wrapper">
@@ -74,7 +101,9 @@ export default function Home() {
                 Desenvolvedor Full-stack web, e gestor de automações.
               </div>
               <div className='subtitle homepage-subtitle'>
-                I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.
+              Estudante de programação com conhecimento em Node.js, Next.js, Typescript e SQL. Com
+experiência profissional em desenvolvimento de software, atuando em projetos full stack com
+Node.js e Next.js. Possuo uma base sólida em fundamentos Frontend, me interesso por automações, sempre que posso implemento IA.
               </div>
             </div>
             <div className="homepage-first-area-right-side">
@@ -88,14 +117,14 @@ export default function Home() {
 
 
           <div className="homepage-socials">
-              <a href="https://www.linkedin.com/in/rocha-dev/" target="_blank"><FaLinkedinIn /></a>
-              <a href="https://github.com/zinfex" target="_blank"><FaGithub /></a>
-              <a href="https://www.instagram.com/arthurochaz/" target="_blank"><FaInstagram /></a>
-              <a href="mailto:zinfegr@gmail.com"><MdOutlineEmail size={27}/></a>
+              <a href="https://www.linkedin.com/in/rocha-dev/" target="_blank"><FaLinkedinIn size={27} /></a>
+              <a href="https://github.com/zinfex" target="_blank"><FaGithub size={27}/></a>
+              <a href="https://www.instagram.com/arthurochaz/" target="_blank"><FaInstagram size={27} /></a>
+              <a href="mailto:zinfegr@gmail.com"><MdOutlineEmail size={30}/></a>
           </div>
 
           
-          <hr style={{marginTop: 50}}/>
+          <hr style={{marginTop: 50}} id="experiencia"/>
 
           <Track />
 

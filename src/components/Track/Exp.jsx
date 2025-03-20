@@ -17,24 +17,24 @@ export default function Experience() {
   const experiences = [
     {
       company: "Pixels - IW Training",
-      title: "Fullstack Developer e Mobile Developer",
+      title: "Curso presencial Fullstack Developer e Mobile Developer",
       years: "Janeiro/2023 - Janeiro/2024",
       icon: <FaBookReader />,
-      technologies: ["JavaScript", "React", "CSS", "SQL"], // Outras tecnologias (exemplo)
+      technologies: ["JavaScript", "React", "Bootstrap", "SQL"], // Outras tecnologias (exemplo)
     },
     {
       company: "SpeedCloud - Hospedagem de Servidores",
       title: "Freelancer",
       years: "Março/2024 - Maio/2024",
       icon: <BsPersonWorkspace  />,
-    technologies: ["PHP", "Github Actions" , "HTML", "CSS"], // Outras tecnologias (exemplo)
+    technologies: ["PHP", "Github Actions" , "HTML", "CSS", "NOSQL"], // Outras tecnologias (exemplo)
     },
     {
       company: "085 Digital",
       title: "Fullstack Web Junior e Gestor de Automações",
       years: "Março/2024 - Atualmente",
       icon:  <MdOutlineWork />,
-      technologies: ["Node", "Next", "React", "Rest API's"], // Outras tecnologias (exemplo)
+      technologies: ["Node", "Next", "React", "Rest API's", "N8N"], // Outras tecnologias (exemplo)
     },
   ];
 
