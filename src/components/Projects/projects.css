@@ -17,12 +17,44 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 10px;
     width: 300px;
+    transition: 100ms ease-in-out;
 }
 
 .project-container:hover {
     background-color: #60606009;
+}
+
+
+.project-container:hover .project-link {
+    color: #224C93;
+}
+
+.project-title {
+    color: #27272aba;
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 1em;
+    padding-top: 15px;
+    transition: 150ms ease-in-out;
+}
+
+.project-description {
+    color: #27272aba;
+    transition: 150ms ease-in-out;
+}
+
+.project-container:hover .project-title, .project-container:hover .project-description{
+    color: rgb(15, 15, 15);
+}
+
+.project-link {
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    padding-top: 20px;
 }

@@ -41,8 +41,9 @@
 }
 
 .tecs-track {
-  background-color: #5185DF;
+  background-color: #ffffff;
+  color: #224C93;
   border-radius: 10px;
   width: fit-content;
   padding: 3px 7px;
-  }
+}

@@ -1,3 +1,5 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -20,6 +22,34 @@
   --fa-font-brands: normal 400 1em / 1 "Font Awesome 6 Brands";
 }
 
+@font-face {
+  font-family: 'SF';
+  src: url('../../public/sf-pro-display/SFPRODISPLAYREGULAR.OTF') format('otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: 'SF Pro Display';
+  src: url('/sf-pro-display/SFPRODISPLAYMEDIUM.OTF') format('otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/sf-pro-display/SFPRODISPLAYSEMIBOLDITALIC.OTF') format('otf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/sf-pro-display/SFPRODISPLAYBOLD.OTF') format('otf');
+  font-weight: 600;
+  font-style: normal;
+} */
+
 html,
 body {
   max-width: 100vw;
@@ -30,6 +60,8 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -151,7 +183,7 @@ img.logo {
 }
 
 .homepage-cv {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
   width: fit-content;
 }
