@@ -11,6 +11,7 @@ import { FaReact } from "react-icons/fa6";
 import { MdOutlineWork } from "react-icons/md";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { GiSandsOfTime } from "react-icons/gi";
+import Image from "next/image";
 
 export default function Experience() {
   // Array local com suas experiências
@@ -21,13 +22,15 @@ export default function Experience() {
       years: "Janeiro/2023 - Janeiro/2024",
       icon: <FaBookReader />,
       technologies: ["JavaScript", "React", "Bootstrap", "SQL"], // Outras tecnologias (exemplo)
+      image: "/exp1.jpg"
     },
     {
       company: "SpeedCloud - Hospedagem de Servidores",
       title: "Freelancer",
       years: "Março/2024 - Maio/2024",
       icon: <BsPersonWorkspace  />,
-    technologies: ["PHP", "Github Actions" , "HTML", "CSS", "NOSQL"], // Outras tecnologias (exemplo)
+      technologies: ["PHP", "Github Actions" , "HTML", "CSS", "NOSQL"], // Outras tecnologias (exemplo)
+      image: false
     },
     {
       company: "085 Digital",
@@ -35,6 +38,7 @@ export default function Experience() {
       years: "Março/2024 - Atualmente",
       icon:  <MdOutlineWork />,
       technologies: ["Node", "Next", "React", "Rest API's", "N8N"], // Outras tecnologias (exemplo)
+      image: "/exp3.jpg"
     },
   ];
 
@@ -52,7 +56,7 @@ export default function Experience() {
       <div className="col-md-8 mx-auto">
         <VerticalTimeline>
           {experiences.map((work, i) => {
-            const { company, title, years, technologies, icon } = work;
+            const { company, title, years, technologies, icon, image } = work;
 
             return (
               <VerticalTimelineElement
@@ -68,27 +72,40 @@ export default function Experience() {
               >
 
                 {/* Título e empresa */}
-                <h3
-                  className="vertical-timeline-element-title"
-                  style={{ textAlign: "left" }}
-                >
-                  {title}
-                </h3>
-                <h4
-                  className="vertical-timeline-element-subtitle"
-                  style={{ textAlign: "left" }}
-                >
-                  <span className="company">{company}</span>
-                </h4>
 
-                {/* Demais tecnologias */}
-                <div style={{ display: 'flex', gap: '5px', textAlign: "left", marginTop: "15px" }}>
-                  {technologies.map((tech, index) => (
-                    <div className="tecs-track" key={index}>
-                      {tech}
+                <div className="tracker-box" style={{ display:'flex' }}>
+
+                {image && typeof image === "string" && (
+                  <Image src={image} width={200} height={200} className="tracker-image" alt="Experiência" />
+                )}
+
+
+                  <div className="tracker-info">
+                    <h3
+                      className="vertical-timeline-element-title"
+                      style={{ textAlign: "left" }}
+                    >
+                      {title}
+                    </h3>
+                    <h4
+                      className="vertical-timeline-element-subtitle"
+                      style={{ textAlign: "left" }}
+                    >
+                      <span className="company">{company}</span>
+                    </h4>
+
+                    {/* Demais tecnologias */}
+                    <div style={{ display: 'flex', gap: '5px', textAlign: "left", marginTop: "15px" }}>
+                      {technologies.map((tech, index) => (
+                        <div className="tecs-track" key={index}>
+                          {tech}
+                        </div>
+                      ))}
                     </div>
-                  ))}
+                  </div>
                 </div>
+
+                
               </VerticalTimelineElement>
             );
           })}

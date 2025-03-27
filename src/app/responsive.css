@@ -26,6 +26,9 @@
     .homepage-first-area {
       flex-direction: column-reverse; 
     }
+    .homepage-image {
+        margin-bottom: 40px;
+      }
   }
   
   @media (max-width: 1270px) {

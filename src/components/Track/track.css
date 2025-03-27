@@ -12,11 +12,6 @@
   text-align: center;
   margin-bottom: 60px;
 }
-  
-.homepage-track img {
-  transform: rotate(-2deg);
-  border-radius: 10%;
-}
 
 .vertical-timeline::before {
   background-color: #27272A;
@@ -27,8 +22,15 @@
 }
 
 .vertical-timeline-element-content {
-  background-color: #27272A;
+  padding: 0;
   color: white;
+  height: fit-content;
+}
+
+@media (max-width: 1024px) {
+  .vertical-timeline-element-content, .tracker-box {
+    height: 200px;
+  }
 }
 
 .vertical-timeline-element-date {
@@ -46,4 +48,24 @@
   border-radius: 10px;
   width: fit-content;
   padding: 3px 7px;
+}
+
+.tracker-box {
+  gap: 10px;
+  padding: 0;
+  background-color: #27272A;
+  box-shadow: 0 3px #ddd;
+  
+}
+
+.tracker-info {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element-content {
+  padding: 0;
+  box-shadow: none;
 }
