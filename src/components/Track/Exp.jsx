@@ -93,7 +93,7 @@ export default function Experience() {
                     </h4>
 
                     {/* Demais tecnologias */}
-                    <div style={{ display: 'flex', gap: '5px', textAlign: "left", marginTop: "15px" }}>
+                    <div className="tecnobox">
                       {technologies.map((tech, index) => (
                         <div className="tecs-track" key={index}>
                           {tech}

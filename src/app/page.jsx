@@ -13,6 +13,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-cards";
+import Skills from "@/components/Skills/Skills";
 
 
 export default function Home() {
@@ -153,9 +154,13 @@ export default function Home() {
           </div>
 
           
-          <hr style={{marginTop: 50}} id="experiencia"/>
+          
+
+          <Skills />
 
           <Track />
+
+          <hr style={{marginTop: 100}} id="experiencia"/>
 
           <Projects />
         </div>

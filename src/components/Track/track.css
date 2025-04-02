@@ -55,7 +55,7 @@
   padding: 0;
   background-color: #27272A;
   box-shadow: 0 3px #ddd;
-  
+  border-radius: 20px;
 }
 
 .tracker-info {
@@ -68,4 +68,12 @@
 .vertical-timeline--two-columns .vertical-timeline-element-content {
   padding: 0;
   box-shadow: none;
+}
+
+.tecnobox {
+  display: flex;
+  display: none;
+  gap: 5px;
+  text-align: left;
+  margin-top: 15px;
 }
