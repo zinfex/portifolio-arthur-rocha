@@ -27,11 +27,11 @@
   height: fit-content;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .vertical-timeline-element-content, .tracker-box {
     height: 200px;
   }
-}
+} */
 
 .vertical-timeline-element-date {
   color: #27272A;

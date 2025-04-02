@@ -7,11 +7,10 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { FaBookReader } from "react-icons/fa";
-import { FaReact } from "react-icons/fa6";
 import { MdOutlineWork } from "react-icons/md";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { GiSandsOfTime } from "react-icons/gi";
-import Image from "next/image";
+import Image from "next/image"; 
 
 export default function Experience() {
   // Array local com suas experiências
@@ -60,6 +59,7 @@ export default function Experience() {
 
             return (
               <VerticalTimelineElement
+              
                 className="vertical-timeline-element--work"
                 date={years}
                 iconStyle={{

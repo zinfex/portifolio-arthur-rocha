@@ -15,9 +15,7 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import Skills from "@/components/Skills/Skills";
 
-
 export default function Home() {
-
   const [stayLogo, setStayLogo] = useState(false);
 	const [logoSize, setLogoSize] = useState(80);
 	const [oldLogoSize, setOldLogoSize] = useState(80);
@@ -39,7 +37,6 @@ export default function Home() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -88,18 +85,15 @@ export default function Home() {
 		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none",
 	};
 
-
   return (
     <div className="page-content" id="inicio">
       <Header />
-
       <div className="content-wrapper">
         <div className="homepage-logo-container">
           <div style={logoStyle}>
             <Image src="/picture.png" width={logoSize} height={logoSize} className="logo" alt="about"/>
           </div>
         </div>
-
         <div className="homepage-container">
           <div className="homepage-first-area">
             <div className="homepage-first-area-left-side">
@@ -119,7 +113,6 @@ export default function Home() {
               >
                   <SwiperSlide>
                     <Image
-                      
                       src={"/avatar.jpg"}
                       width={400}
                       height={400}
@@ -136,31 +129,21 @@ export default function Home() {
                       alt={`Projeto`}
                     />
                    </SwiperSlide>
-
               </Swiper>
             </div>
           </div>
-
           <div className="homepage-cv">
             <a href="/cv_Arthur_Rocha.pdf" download="cv_Arthur_Rocha.pdf" target="_blank">Download CV <PiReadCvLogo size={20}/> </a>
           </div>
-
-
           <div className="homepage-socials">
               <a href="https://www.linkedin.com/in/rocha-dev/" target="_blank"><FaLinkedinIn size={27} /></a>
               <a href="https://github.com/zinfex" target="_blank"><FaGithub size={27}/></a>
               <a href="https://www.instagram.com/arthurochaz/" target="_blank"><FaInstagram size={27} /></a>
               <a href="mailto:zinfegr@gmail.com"><MdOutlineEmail size={30}/></a>
           </div>
-
-          
-          
-
           <Skills />
-
           <Track />
-
-          <hr style={{marginTop: 100}} id="experiencia"/>
+          <hr style={{marginTop: 80}} id="experiencia"/>
 
           <Projects />
         </div>
