@@ -118,8 +118,24 @@ a {
 }
 
 .homepage-image {
-  width: 400px; /* ou outro valor inicial */
+
   height: auto; /* ajusta a altura proporcionalmente */
+  overflow: hidden;
+  /* transform: rotate(3deg); */
+  border-radius: 10%;
+}
+
+@media (min-width: 1025px) {
+  .mySwiper {
+    border-radius: 20px;
+    display: flex;
+    max-width: 50%;
+  }
+}
+
+.swiper-3d, .swiper-slide-shadow  {
+  background-color: white;
+  border-radius: 30px;
 }
 
 /* Quando a tela for até 450px de largura, mude para % */
@@ -133,12 +149,6 @@ a {
 .homepage-first-area-left-side {
   display: flex;
   flex-direction: column;
-}
-
-@media (min-width: 1025px) {
-  .homepage-first-area-left-side {
-    max-width: 50%;
-  }
 }
 
 .title {
@@ -161,23 +171,11 @@ a {
 
 .homepage-first-area {
   display: flex;
-  gap: 10%;
   align-items: center;
 }
 
-.homepage-image img{
-  display: flex;
-  width: 100%;
-  border-radius: 30px;
-}
 
-.homepage-image {
-  overflow: hidden;
-  transform: rotate(3deg);
-  border-radius: 10%;
-}
-
-.homepage-image img {
+img {
   overflow-clip-margin: content-box;
   overflow: clip;
 }

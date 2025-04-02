@@ -1,4 +1,4 @@
-"use client"; 
+'use client'
 
 import React from "react";
 import {
@@ -71,13 +71,11 @@ export default function Experience() {
                 key={i}
               >
 
-                {/* Título e empresa */}
-
                 <div className="tracker-box" style={{ display:'flex' }}>
 
-                {image && typeof image === "string" && (
+                {/* {image && typeof image === "string" && (
                   <Image src={image} width={200} height={200} className="tracker-image" alt="Experiência" />
-                )}
+                )} */}
 
 
                   <div className="tracker-info">

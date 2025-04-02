@@ -9,6 +9,11 @@ import Track from "@/components/Track/Track";
 import { PiReadCvLogo } from "react-icons/pi";
 import { useState, useEffect } from "react";
 import Header from "@/components/Header/Header";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCards } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-cards";
+
 
 export default function Home() {
 
@@ -90,7 +95,7 @@ export default function Home() {
       <div className="content-wrapper">
         <div className="homepage-logo-container">
           <div style={logoStyle}>
-            <Image src="/picture.png" width={logoSize} height={logoSize} link={false} className="logo" alt="about"/>
+            <Image src="/picture.png" width={logoSize} height={logoSize} className="logo" alt="about"/>
           </div>
         </div>
 
@@ -105,7 +110,33 @@ export default function Home() {
               </div>
             </div>
             <div className="homepage-first-area-right-side">
-              <Image src="/avatar.jpg" width={400} height={400} className="homepage-image" alt="about"/>
+              <Swiper
+                effect={"cards"}
+                grabCursor={true}
+                modules={[EffectCards]}
+                className="mySwiper"
+              >
+                  <SwiperSlide>
+                    <Image
+                      
+                      src={"/avatar.jpg"}
+                      width={400}
+                      height={400}
+                      className="homepage-image"
+                      alt={`Projeto`}
+                    />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image
+                      src={"/exp3.jpg"}
+                      width={400}
+                      height={400}
+                      className="homepage-image"
+                      alt={`Projeto`}
+                    />
+                   </SwiperSlide>
+
+              </Swiper>
             </div>
           </div>
 
