@@ -27,7 +27,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-	width: 10px;
+	width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -227,4 +227,19 @@ img.logo {
 
 .homepage-socials a:hover {
   color: rgb(28, 28, 28);
+}
+
+.homepage-first-area-right-side {
+  animation: slideInRight 1s ease forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

@@ -1,9 +1,8 @@
 'use client'
 
 import "./projects.css";
-import Image from "next/image";
 import { IoIosLink } from "react-icons/io";
-import { useState } from "react";
+import { useEffect, useRef } from "react";
 //stacks:
 import { SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -15,8 +14,32 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
 
 export default function Projects() {
+  const titleRef2 = useRef(null)
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(
+      titleRef2.current,
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: titleRef2.current, // elemento que dispara
+          start: "top 80%",          // quando chegar a 80% da tela
+          toggleActions: "play none none reverse",
+        },
+      }
+    )
+  }, [])
+
   const projects = [
     {
       title: 'Simple Forms',
@@ -46,7 +69,7 @@ export default function Projects() {
 
   return (
     <div className="homepage-projects" id="projetos">
-        <div className="title-track title-track-projects" style={{marginBottom: 0, marginTop: 10}}>Projetos</div>
+        <div className="title-track title-track-projects" style={{marginBottom: 0}} ref={titleRef2}>Projetos</div>
 
         <div className="all-projects-container">
             {projects.map((project, index) => {

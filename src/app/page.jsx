@@ -101,7 +101,7 @@ export default function Home() {
                 Desenvolvedor Full-stack web, e gestor de automações.
               </div>
               <div className='subtitle homepage-subtitle'>
-                Desenvolvedor de software com experiência profissional em projetos full stack utilizando Node.js, Next.js, TypeScript e SQL. Possuo base sólida em fundamentos de Frontend e grande interesse em automações, sempre explorando a integração de IA quando possível. Gosto de manter uma abordagem minimalista e objetiva nos layouts, priorizando eficiência e clareza.
+               👋 Me chamo Arthur Rocha, sou Desenvolvedor de software com experiência profissional em projetos full stack utilizando Node.js, Next.js, TypeScript e SQL. Possuo base sólida em fundamentos de Frontend e grande interesse em automações, sempre explorando a integração de IA quando possível. Gosto de manter uma abordagem minimalista e objetiva nos layouts, priorizando eficiência e clareza.
               </div>
             </div>
             <div className="homepage-first-area-right-side">
