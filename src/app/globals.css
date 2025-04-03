@@ -118,10 +118,8 @@ a {
 }
 
 .homepage-image {
-
-  height: auto; /* ajusta a altura proporcionalmente */
+  height: auto;
   overflow: hidden;
-  /* transform: rotate(3deg); */
   border-radius: 10%;
 }
 
@@ -132,6 +130,8 @@ a {
     max-width: 50%;
   }
 }
+
+
 
 .swiper-3d, .swiper-slide-shadow  {
   background-color: white;
@@ -149,6 +149,7 @@ a {
 .homepage-first-area-left-side {
   display: flex;
   flex-direction: column;
+
 }
 
 .title {
@@ -241,5 +242,11 @@ img.logo {
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1425px) {
+  .homepage-image {
+    width: 300px;
   }
 }

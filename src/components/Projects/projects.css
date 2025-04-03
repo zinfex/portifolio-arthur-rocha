@@ -86,6 +86,7 @@
 .swiper-button-prev:after, .swiper-button-next:after {
     color: rgba(141, 141, 141, 0.993);
     transform: scale(0.7);
+    display: none;
 }
 
 .title-track-projects {
