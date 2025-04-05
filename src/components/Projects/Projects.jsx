@@ -42,20 +42,20 @@ export default function Projects() {
 
   const projects = [
     {
-      title: 'Simple Forms',
+      title: 'Askwise',
       description: 'Criador de formulários inovador, simples e prático',
       stacks: [
         <FaReact size={20} />, <IoLogoJavascript size={20} />
       ],
-      link: 'https://github.com/zinfex/simple-forms'
+      link: 'https://github.com/zinfex/Askwise'
     },
     {
-      title: 'TempSync',
+      title: 'ThermoBoard',
       stacks: [
         <FaReact size={20} />, <IoLogoJavascript size={20} />, <RiNodejsFill size={20} />
       ],
       description: 'Software de monitoramento de temperatura e umidade',
-      link: 'https://github.com/zinfex/TempSync'
+      link: 'https://github.com/zinfex/ThermoBoard'
     },
     {
       title: 'BYD Site',
