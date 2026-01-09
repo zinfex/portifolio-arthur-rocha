@@ -111,29 +111,47 @@ export default function Home() {
                 modules={[EffectCards]}
                 className="mySwiper"
               >
-                  <SwiperSlide>
-                    <Image
-                      src={"/avatar.jpg"}
-                      width={400}
-                      height={400}
-                      className="homepage-image"
-                      alt={`Projeto`}
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      src={"/exp3.jpg"}
-                      width={400}
-                      height={400}
-                      className="homepage-image"
-                      alt={`Projeto`}
-                    />
-                   </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    src={"/avatar.png"}
+                    width={400}
+                    height={400}
+                    className="homepage-image"
+                    alt={`Projeto`}
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    src={"/exp3.jpg"}
+                    width={400}
+                    height={400}
+                    className="homepage-image"
+                    alt={`Projeto`}
+                  />
+                </SwiperSlide>
+                {/* <SwiperSlide>
+                  <Image
+                    src={"/exp2.png"}
+                    width={400}
+                    height={400}
+                    className="homepage-image"
+                    alt={`Projeto`}
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Image
+                    src={"/exp1.png"}
+                    width={400}
+                    height={400}
+                    className="homepage-image"
+                    alt={`Projeto`}
+                  />
+                </SwiperSlide> */}
               </Swiper>
             </div>
           </div>
           <div className="homepage-cv">
-            <a href="/cv_Arthur_Rocha.pdf" download="cv_Arthur_Rocha.pdf" target="_blank">Download CV <PiReadCvLogo size={20}/> </a>
+            <a href="/cv_arthur_rocha.pdf" download="cv_arthur_rocha.pdf" target="_blank">Download CV <PiReadCvLogo size={20}/> </a>
           </div>
           <div className="homepage-socials">
               <a href="https://www.linkedin.com/in/rocha-dev/" target="_blank"><FaLinkedinIn size={27} /></a>

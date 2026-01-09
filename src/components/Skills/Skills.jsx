@@ -38,6 +38,7 @@ export default function Skills() {
             <i className="devicon-typescript-plain"></i>
             <i className="devicon-javascript-plain"></i>
             <i className="devicon-docker-plain-wordmark"></i>
+            <i className="devicon-supabase-plain"></i>
             <i className="devicon-mysql-plain-wordmark"></i>
             <i className="devicon-mongodb-plain-wordmark"></i>
         </div>

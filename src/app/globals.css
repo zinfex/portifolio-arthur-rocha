@@ -54,6 +54,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  padding-bottom: 50px;
 }
 
 body {
@@ -121,6 +122,8 @@ a {
   height: auto;
   overflow: hidden;
   border-radius: 10%;
+  max-height: 400px;
+  
 }
 
 @media (min-width: 1025px) {

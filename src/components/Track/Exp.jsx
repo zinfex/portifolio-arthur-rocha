@@ -6,7 +6,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { FaBookReader } from "react-icons/fa";
+import { FaBookReader, FaRobot } from "react-icons/fa";
 import { MdOutlineWork } from "react-icons/md";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { GiSandsOfTime } from "react-icons/gi";
@@ -17,25 +17,33 @@ export default function Experience() {
   const experiences = [
     {
       company: "Pixels - IW Training",
-      title: "Curso presencial Fullstack Developer e Mobile Developer",
+      title: "Curso presencial - Fullstack Developer e Mobile Developer",
       years: "Janeiro/2023 - Janeiro/2024",
       icon: <FaBookReader />,
       technologies: ["JavaScript", "React", "Bootstrap", "SQL"], // Outras tecnologias (exemplo)
       image: "/exp1.jpg"
     },
     {
+      company: "085 Digital",
+      title: "Fullstack Web Junior e Gestor de Automações",
+      years: "Março/2024 - Outubro/2025",
+      icon:  <MdOutlineWork />,
+      technologies: ["Node", "Next", "React", "Rest API's", "N8N"], // Outras tecnologias (exemplo)
+      image: "/exp3.jpg"
+    },
+    {
       company: "SpeedCloud - Hospedagem de Servidores",
-      title: "Freelancer",
-      years: "Março/2024 - Maio/2024",
+      title: "Freelancer - Automações IA + Sites Fullstack",
+      years: "Janeiro/2025 - Outubro/2025",
       icon: <BsPersonWorkspace  />,
       technologies: ["PHP", "Github Actions" , "HTML", "CSS", "NOSQL"], // Outras tecnologias (exemplo)
       image: false
     },
     {
-      company: "085 Digital",
-      title: "Fullstack Web Junior e Gestor de Automações",
-      years: "Março/2024 - Atualmente",
-      icon:  <MdOutlineWork />,
+      company: "Chat2Desk",
+      title: "Gestor de Automações com IA",
+      years: "Outubro/2025 - Dezembro/2025",
+      icon:  <FaRobot />,
       technologies: ["Node", "Next", "React", "Rest API's", "N8N"], // Outras tecnologias (exemplo)
       image: "/exp3.jpg"
     },
@@ -50,6 +58,8 @@ export default function Experience() {
           </h1>
         </div>
       </div>
+
+      
 
       {/* Timeline */}
       <div className="col-md-8 mx-auto">
