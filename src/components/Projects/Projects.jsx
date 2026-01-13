@@ -46,14 +46,14 @@ export default function Projects() {
       link: "https://github.com/zinfex/Askwise",
     },
     {
-      title: "ThermoBoard",
+      title: "StatusHook",
       stacks: [
         <FaReact size={20} />,
-        <IoLogoJavascript size={20} />,
+        <SiTypescript size={20} />,
         <RiNodejsFill size={20} />,
       ],
-      description: "Software de monitoramento de temperatura e umidade",
-      link: "https://github.com/zinfex/ThermoBoard",
+      description: "Painel de monitoramento e gestão de automações",
+      link: "https://github.com/zinfex/statushook-opensource",
     },
     {
       title: "BYD Site",

@@ -151,7 +151,7 @@ export default function Home() {
             </div>
           </div>
           <div className="homepage-cv">
-            <a href="/cv_arthur_rocha.pdf" download="cv_arthur_rocha.pdf" target="_blank">Download CV <PiReadCvLogo size={20}/> </a>
+            <a href="/cv_Arthur_Rocha.pdf" download="cv_Arthur_Rocha.pdf" target="_blank">Download CV <PiReadCvLogo size={20}/> </a>
           </div>
           <div className="homepage-socials">
               <a href="https://www.linkedin.com/in/rocha-dev/" target="_blank"><FaLinkedinIn size={27} /></a>

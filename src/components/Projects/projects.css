@@ -51,11 +51,11 @@
   transform: translateY(-8px) scale(1.02);
   background: linear-gradient(
     135deg,
-    rgba(34, 76, 147, 0.1) 0%,
+    rgba(34, 75, 147, 0.059) 0%,
     rgba(74, 144, 226, 0.05) 100%
   );
-  box-shadow: 0 20px 60px rgba(34, 76, 147, 0.25),
-    0 0 40px rgba(74, 144, 226, 0.15);
+  box-shadow: 0 20px 60px rgba(34, 75, 147, 0.136),
+    0 0 40px rgba(74, 145, 226, 0.072);
   border-color: rgba(34, 76, 147, 0.3);
 }
 

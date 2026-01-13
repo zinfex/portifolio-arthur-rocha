@@ -26,7 +26,7 @@ export default function Experience() {
     {
       company: "085 Digital",
       title: "Fullstack Web Junior e Gestor de Automações",
-      years: "Março/2024 - Outubro/2025",
+      years: "Março/2023 - Outubro/2025",
       icon:  <MdOutlineWork />,
       technologies: ["Node", "Next", "React", "Rest API's", "N8N"], // Outras tecnologias (exemplo)
       image: "/exp3.jpg"
